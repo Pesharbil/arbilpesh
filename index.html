@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>هک شدی!</title>
+    <style>
+        body {
+            background-color: black;
+            color: red;
+            text-align: center;
+            font-size: 2em;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+        #warning {
+            margin-top: 20%;
+            animation: glitch 0.5s infinite;
+        }
+        @keyframes glitch {
+            0% { transform: translate(0, 0); }
+            25% { transform: translate(-5px, 5px); }
+            50% { transform: translate(5px, -5px); }
+            75% { transform: translate(-5px, 5px); }
+            100% { transform: translate(0, 0); }
+        }
+    </style>
+</head>
+<body>
+    <div id="warning">⚠️ گوشی شما هک شده! تمام اطلاعات شما در حال ارسال است... ⚠️</div>
+    <script>
+        setTimeout(() => {
+            alert("خطای امنیتی! دسترسی به گوشی شما تأیید شد!");
+        }, 3000);
+    </script>
+</body>
+</html>
